@@ -1,0 +1,23 @@
+.submit-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  position: relative;
+  right: 7rem;
+}
+.inputField {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  width: 60rem;
+  height: 4rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  border: none;
+}
+
+.container {
+  text-align: center;
+  padding-bottom: 3rem;
+}

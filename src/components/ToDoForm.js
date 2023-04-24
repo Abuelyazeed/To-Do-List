@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import "./ToDoForm.css";
 
 function ToDoForm({ addTask }) {
   const [userInput, setUserInput] = useState("");
@@ -15,16 +16,17 @@ function ToDoForm({ addTask }) {
   };
 
   return (
-    <div>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter task..."
-          onChange={handleChange}
-          value={userInput}
-        ></input>
-        <button onClick={handleSubmit}>Submit</button>
-      </form>
+    <div className="container">
+      <input
+        type="text"
+        placeholder="Enter task..."
+        onChange={handleChange}
+        value={userInput}
+        className="inputField"
+      ></input>
+      <button className="submit-btn" onClick={handleSubmit} type="button">
+        Submit
+      </button>
     </div>
   );
 }
