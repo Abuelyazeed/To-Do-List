@@ -8,6 +8,15 @@ import data from "./data.json";
 function App() {
   const [toDoList, setToDoList] = useState(data);
 
+  const addTask = (userInput) => {
+    let copy = [...toDoList];
+    copy = [
+      ...copy,
+      { id: toDoList.length + 1, task: userInput, complete: false },
+    ];
+    setToDoList(copy);
+  };
+
   const handleToggle = (id) => {
     let mapped = toDoList.map((task) => {
       return task.id == id
@@ -32,7 +41,7 @@ function App() {
         handleToggle={handleToggle}
         handleFilter={handleFilter}
       />
-      <ToDoForm />
+      <ToDoForm addTask={addTask} />
     </div>
   );
 }
