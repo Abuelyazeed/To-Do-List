@@ -1,0 +1,8 @@
+.todo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  padding: 1rem;
+  opacity: 0.8;
+  cursor: pointer;
+}
