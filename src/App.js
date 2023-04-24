@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
+import ToDoForm from "./components/ToDoForm";
 import ToDoList from "./components/ToDoList";
 import data from "./data.json";
 
@@ -31,6 +32,7 @@ function App() {
         handleToggle={handleToggle}
         handleFilter={handleFilter}
       />
+      <ToDoForm />
     </div>
   );
 }
